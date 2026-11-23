@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // document.write("<br/>"+"----------------------"+"<br/>")
+        
+        function numbering(){ //함수 정의부
+            i = 0;
+            while (i < 10){
+                document.write(i);
+                i += 1;
+            }
+        }
+        numbering(); //함수 호출부
+
+        function get_arguments(arg1, arg2){
+            return arg1 + arg2; 
+        }
+        alert(get_arguments(10, 20));
+        alert(get_arguments(20, 30));      
+        
+        document.write("<br/>"+"----------------------"+"<br/>");
+        
+        //익명함수
+        (function() {
+            k = 0;
+            while(k < 10){
+                document.write(k);
+                k += 2;
+            }
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHi(){
+            alert(arguments.length);
+            if(arguments.length == 1){
+                alert(arguments[0]);
+            } else if(arguments.length == 2){
+                alert(arguments[0] + ' : ' + arguments[1]);
+            } else {
+                alert('Hello');
+            } 
+        }
+
+        sayHi(); //0, Hello
+        sayHi('hi'); //1, hi
+        sayHi('say', 'hi'); //2, say : hi
+        sayHi('a', 'b', 'c'); //3, Hello
+    </script>
+</body>
+</html>
