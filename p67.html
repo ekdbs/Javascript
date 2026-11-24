@@ -1,0 +1,39 @@
+<html>
+  <head> </head>
+  <body>
+    <img id="image" src="source/3.jpg" width="120" height="100" />
+
+    <script>
+      //#1
+      // var clickCount = 0;
+      // function changeImage() {
+      //   document.getElementById("image").src = "source/bg.jpg";
+      //   clickCount++;
+      //   // console.log(clickCount);
+      //   if (clickCount % 2 == 0) {
+      //     document.getElementById("image").src = "source/3.jpg";
+      //   }
+      // }
+
+      //#2
+      var imgState = 0;
+      function changeImage() {
+        switch (imgState) {
+          case 0:
+            document.getElementById("image").src = "source/bg.jpg";
+            imgState = 1;
+            break;
+          case 1:
+            document.getElementById("image").src = "source/3.jpg";
+            imgState = 0;
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+    
+
+    <input type="button" onclick="changeImage()" value="click!" />
+  </body>
+</html>
